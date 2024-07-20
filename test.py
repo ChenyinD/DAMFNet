@@ -15,11 +15,11 @@ def train():
     EPOCH =1 # 前向后向传播迭代次数
 
 
-    # f2 = dataset.load_dataset_224(2, '../DAFNet/datasets/txt/LEVIR-CD/A3.txt', '../DAFNet/datasets/txt/LEVIR-CD/B3.txt', '../DAFNet/datasets/txt/LEVIR-CD/C3.txt')
-    f2 = dataset.load_dataset_224(2, '../DAFNet/datasets/txt/WHU-CD/WA1.txt', '../DAFNet/datasets/txt/WHU-CD/WB1.txt', '../DAFNet/datasets/txt/WHU-CD/WC1.txt')
+    # f2 = dataset.load_dataset_224(2, '../DAMFNet/datasets/txt/LEVIR-CD/A3.txt', '../DAMFNet/datasets/txt/LEVIR-CD/B3.txt', '../DAMFNet/datasets/txt/LEVIR-CD/C3.txt')
+    f2 = dataset.load_dataset_224(2, '../DAMFNet/datasets/txt/WHU-CD/WA1.txt', '../DAMFNet/datasets/txt/WHU-CD/WB1.txt', '../DAMFNet/datasets/txt/WHU-CD/WC1.txt')
 
 
-    cnn = torch.load('../DAFNet/pt/best_model_test_WHU.pt').cuda()
+    cnn = torch.load('../DAMFNet/pt/best_model_test_WHU.pt').cuda()
 
     confu=np.array([[0, 0], [0, 0]])
     for epoch in range(EPOCH):
