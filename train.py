@@ -115,7 +115,7 @@ def train():
                 crs.append(iou)
                 print(iou)
                 if crs[-1]>=max(crs):
-                    torch.save(cnn, 'pt/best_model_test_LEVIR1.pt')
+                    torch.save(cnn, 'best_model_test_LEVIR1.pt')
                     print(len(crs))
 
 
