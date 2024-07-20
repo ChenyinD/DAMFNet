@@ -17,11 +17,11 @@ def train():
     EPOCH =80  # 前向后向传播迭代次数
     LR = 0.001   # 学习率 learning rate
 
-    f1 = dataset.load_dataset_512(2, '../DAFNet/datasets/txt/LEVIR-CD/A1.txt', '../DAFNet/datasets/txt/LEVIR-CD/B1.txt', '../DAFNet/datasets/txt/LEVIR-CD/C1.txt')
-    f2 = dataset.load_dataset_224(2, '../DAFNet/datasets/txt/LEVIR-CD/A2.txt', '../DAFNet/datasets/txt/LEVIR-CD/B2.txt', '../DAFNet/datasets/txt/LEVIR-CD/C2.txt')
+    f1 = dataset.load_dataset_512(2, '../DAMFNet/datasets/txt/LEVIR-CD/A1.txt', '../DAMFNet/datasets/txt/LEVIR-CD/B1.txt', '../DAMFNet/datasets/txt/LEVIR-CD/C1.txt')
+    f2 = dataset.load_dataset_224(2, '../DAMFNet/datasets/txt/LEVIR-CD/A2.txt', '../DAMFNet/datasets/txt/LEVIR-CD/B2.txt', '../DAMFNet/datasets/txt/LEVIR-CD/C2.txt')
 
-    # f1 = dataset.load_dataset_512(2, '../DAFNet/datasets/txt/WHU-CD/WA.txt', '../DAFNet/datasets/txt/WHU-CD/WB.txt', '../DAFNet/datasets/txt/WHU-CD/WC.txt')
-    # f2 = dataset.load_dataset_224(2, '../DAFNet/datasets/txt/WHU-CD/WA2.txt', '../DAFNet/datasets/txt/WHU-CD/WB2.txt', '../DAFNet/datasets/txt/WHU-CD/WC2.txt')
+    # f1 = dataset.load_dataset_512(2, '../DAMFNet/datasets/txt/WHU-CD/WA.txt', '../DAMFNet/datasets/txt/WHU-CD/WB.txt', '../DAMFNet/datasets/txt/WHU-CD/WC.txt')
+    # f2 = dataset.load_dataset_224(2, '../DAMFNet/datasets/txt/WHU-CD/WA2.txt', '../DAMFNet/datasets/txt/WHU-CD/WB2.txt', '../DAMFNet/datasets/txt/WHU-CD/WC2.txt')
 
     cnn=Net.CDNet().cuda()
 
