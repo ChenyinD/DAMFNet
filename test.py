@@ -19,7 +19,7 @@ def train():
     f2 = dataset.load_dataset_224(2, '../DAMFNet/datasets/txt/WHU-CD/WA1.txt', '../DAMFNet/datasets/txt/WHU-CD/WB1.txt', '../DAMFNet/datasets/txt/WHU-CD/WC1.txt')
 
 
-    cnn = torch.load('../DAMFNet/pt/best_model_test_WHU.pt').cuda()
+    cnn = torch.load('../DAMFNet/best_model_test_WHU.pt').cuda()
 
     confu=np.array([[0, 0], [0, 0]])
     for epoch in range(EPOCH):
